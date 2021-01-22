@@ -8,6 +8,7 @@ import { AddressInfo } from "net"
 import createStudent from './endpoints/createStudent'
 import createTeacher from './endpoints/createTeacher'
 import createMission from './endpoints/createMission'
+import getStudentById from './endpoints/getStudentById'
 
 
 //configurar dotenv
@@ -35,6 +36,8 @@ app.put('/student',createStudent)//esta recebendo 2 parametros-caminho'/' e funÃ
 app.put('/teacher',createTeacher)
 //caminho para encontrar o user
 app.put('/mission',createMission)
+//caminho para encontra estudante por Id
+app.get('/student/:id',getStudentById)
 
 //SERVIDOR CONFIGURADO PARA INICIAR -- ABAIXO
 const server = app.listen(process.env.PORT || 3003, () => {

@@ -1,12 +1,16 @@
 import {Request, Response } from 'express';
 import insertStudent from '../data/insertStudent'
 
+
 export default async function createStudent(
     req:Request,
     res:Response
 )
     {
         try{
+
+
+          
             //validar entradas da requisição
 if (
     !req.body.name||

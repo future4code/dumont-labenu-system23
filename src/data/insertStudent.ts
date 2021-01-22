@@ -5,10 +5,12 @@ export default async function insertStudent(
     id:string,
     name:string,
     email:string,
-    bday:Date,
+    bday: Date 
    
     ){
-        await connection.insert(
+       
+
+await connection.insert(
             {
                 id,
                 name,
