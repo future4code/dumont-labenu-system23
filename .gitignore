@@ -1,5 +1,7 @@
 node_modules
 package-lock.json
 build
-.env
-request.http
+.sql
+.rest
+
+
