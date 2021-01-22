@@ -40,8 +40,8 @@ app.put('/mission',createMission)
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
        const address = server.address() as AddressInfo;
-       console.log(`ISSSO AI GAROTA ELE ESTA RODANDO :) NA PORTA http://localhost: ${address.port}`);// SE ELE INICIAR MOSTRA A MSG
+       console.log(`PARABENS ESTA RODANDO NA PORTA http://localhost: ${address.port}`);// SE ELE INICIAR MOSTRA A MSG
     } else {
-       console.error(`:( AFF DEU ERRO HEMM`);//SE DER ERRO MOSTRA ESTA MSG
+       console.error(`:( AFF DEU ERRO `);//SE DER ERRO MOSTRA ESTA MSG
     }
 });
